@@ -47,7 +47,7 @@ model.compile(optimizer=tensorflow.keras.optimizers.SGD(learning_rate=0.001), lo
 # loss（损失函数）用于衡量模型预测值与真实值之间的差异。
 
 # 8. 模型训练
-history_5000 = model.fit(Education, Income, epochs=5000, verbose=1)
+model_complete = model.fit(Education, Income, epochs=5000, verbose=1)
 
 # 9. 模型预测
 predicted_income = model.predict(np.array([10, 15]).reshape(-1, 1))
