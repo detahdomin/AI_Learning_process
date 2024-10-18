@@ -42,7 +42,7 @@ model.summary()
 # 分析参数个数：输入层到输出层有 1 个权重(这里是斜率)和 1 个偏置(截距)，共 2 个参数。
 
 # 7. 模型编译
-model.compile(optimizer=tensorflow.keras.optimizers.SGD(learning_rate=0.001), loss='mse')
+model.compile(optimizer='adam', loss='mse')
 # optimizer（优化器）是用于更新模型参数以最小化损失函数的算法。
 # loss（损失函数）用于衡量模型预测值与真实值之间的差异。
 
